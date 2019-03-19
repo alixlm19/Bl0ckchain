@@ -57,15 +57,3 @@ class Blockchain:
         for block in self.chain:
             str_ += str(block)
         return str_
-
-b = Blockchain()
-b.addTransaction(0, "Alix", "Leon", 1)
-b.addTransaction(1, "Francisco", "Leon", 1)
-b.addTransaction(2, "Josefina", "Montesino", 1)
-b.addTransaction(3, "Alicia", "Leon", 1)
-
-#print(b)
-#b.checkBlock()
-#print(b.checkTransaction())
-#b.chain[0].transactionList[0]["quantity"] = 2
-b.verifyIntegrity()
